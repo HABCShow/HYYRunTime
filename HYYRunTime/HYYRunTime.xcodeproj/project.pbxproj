@@ -13,6 +13,8 @@
 		AF9D9A7D1E6994B900126402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9D9A7B1E6994B900126402 /* Main.storyboard */; };
 		AF9D9A7F1E6994B900126402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF9D9A7E1E6994B900126402 /* Assets.xcassets */; };
 		AF9D9A821E6994B900126402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9D9A801E6994B900126402 /* LaunchScreen.storyboard */; };
+		AF9D9A8B1E6995C600126402 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D9A8A1E6995C600126402 /* Person.m */; };
+		AF9D9A8E1E6995F000126402 /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9D9A8D1E6995F000126402 /* NSObject+Runtime.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		AF9D9A7E1E6994B900126402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF9D9A811E6994B900126402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF9D9A831E6994B900126402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF9D9A891E6995C600126402 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AF9D9A8A1E6995C600126402 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		AF9D9A8C1E6995F000126402 /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		AF9D9A8D1E6995F000126402 /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				AF9D9A761E6994B900126402 /* AppDelegate.m */,
 				AF9D9A781E6994B900126402 /* ViewController.h */,
 				AF9D9A791E6994B900126402 /* ViewController.m */,
+				AF9D9A8C1E6995F000126402 /* NSObject+Runtime.h */,
+				AF9D9A8D1E6995F000126402 /* NSObject+Runtime.m */,
+				AF9D9A891E6995C600126402 /* Person.h */,
+				AF9D9A8A1E6995C600126402 /* Person.m */,
 				AF9D9A7B1E6994B900126402 /* Main.storyboard */,
 				AF9D9A7E1E6994B900126402 /* Assets.xcassets */,
 				AF9D9A801E6994B900126402 /* LaunchScreen.storyboard */,
@@ -151,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF9D9A7A1E6994B900126402 /* ViewController.m in Sources */,
+				AF9D9A8E1E6995F000126402 /* NSObject+Runtime.m in Sources */,
 				AF9D9A771E6994B900126402 /* AppDelegate.m in Sources */,
+				AF9D9A8B1E6995C600126402 /* Person.m in Sources */,
 				AF9D9A741E6994B900126402 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
