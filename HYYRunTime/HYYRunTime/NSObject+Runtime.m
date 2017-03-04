@@ -29,7 +29,15 @@
     return objc;
 }
 
+const char *Kproperty = "Kproperty";
+
 +(NSArray *)hyy_objProperties{
+    // 关联对象   获取属性
+    NSArray *ptyList = objc_getAssociatedObject(self, Kproperty);
+    if (ptyList != nil) {
+        return ptyList;
+    }
+    
     // 取得类的属性列表
     // 参数：   要获取的类    属性个数指针
     unsigned int count;
@@ -49,6 +57,9 @@
     // 释放
     free(propertyList);
     NSLog(@"%@",arrM);
+    
+   // 设置属性
+    objc_setAssociatedObject(self, Kproperty, arrM.copy, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     return arrM.copy;
     
 }
