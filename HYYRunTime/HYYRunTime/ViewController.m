@@ -18,7 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Person hyy_objProperties];
+   NSArray *proList = [Person hyy_objProperties];
+    
+    NSLog(@"%@",proList);
+    Person *person = [Person hyy_objWithDict:@{@"name":@"zhangsan",
+                                               @"age":@18,
+                                               @"height":@1.8}];
+    NSLog(@"%@",person);
 }
 
 

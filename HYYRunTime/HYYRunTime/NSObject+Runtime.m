@@ -10,7 +10,24 @@
 #import <objc/runtime.h>
 
 @implementation NSObject (Runtime)
-
++(instancetype)hyy_objWithDict:(NSDictionary *)dict{
+    
+    id objc = [[self alloc]init];
+    // 获取self属性列表
+    NSArray *proList = [self hyy_objProperties];
+    // 判断key是否在list中
+    [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        
+        if ([proList containsObject:key]) {
+            // 属性存在  设置数值
+            [objc setValue:obj forKey:key];
+        }
+        
+    }];
+    
+    
+    return objc;
+}
 
 +(NSArray *)hyy_objProperties{
     // 取得类的属性列表

@@ -10,4 +10,12 @@
 
 @implementation Person
 
+-(NSString *)description{
+    
+    
+    NSArray *keys = @[@"name",@"age",@"height"];
+    return [self dictionaryWithValuesForKeys:keys].description;
+    
+}
+
 @end
